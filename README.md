@@ -1,6 +1,4 @@
-﻿# hamgnn_optics
-
-[Chinese documentation](README.zh-CN.md)
+# hamgnn_optics
 
 A package for calculating linear optical properties from Hamiltonians predicted by [HamGNN](https://github.com/QuantumLab-ZY/HamGNN). It uses an OpenMX atomic orbital basis together with real-space overlap and position-operator matrices to calculate optical conductivity, the dielectric tensor, and isotropic absorption.
 
@@ -297,5 +295,4 @@ hamgnn_optics/
 ```
 
 
-#   H a m G N N _ o p t i c s  
- 
+#
