@@ -1,0 +1,13 @@
+name: hamgnn-optics
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=1.26
+  - scipy=1.13
+  - pyyaml=6.0
+  - pymatgen
+  - pip
+  - pip:
+      - -e .
+

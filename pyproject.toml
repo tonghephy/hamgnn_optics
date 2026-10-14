@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hamgnn-optics"
+version = "0.1.0"
+description = "Linear optical postprocessing of HamGNN Hamiltonians in an OpenMX atomic-orbital basis"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "PyYAML>=6", "pymatgen>=2023.8"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["hamgnn_optics"]
+
+[tool.setuptools.package-data]
+hamgnn_optics = ["*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
