@@ -1,0 +1,18 @@
+# Template for: python hamgnn_optics/optics.py --config hamgnn_optics/optics.yaml
+# prediction_file must be HamGNN's prediction_hamiltonian.npy.
+# graph_dir must contain graph_arrays.npz from graph_data_gen.py.
+prediction_file: /path/to/prediction_hamiltonian.npy
+graph_dir: /path/to/graph_data
+output: /path/to/output/optics
+
+hamgnn:
+  nao_max: 26
+  orbital_indices: {}
+
+optics:
+  kmesh: [20, 20, 20]
+  energy_range_ev: [0.0, 5.0]
+  energy_step_ev: 0.05
+  broadening_ev: 0.01
+  # null infers half the total valence electron count.
+  occupied_bands: null

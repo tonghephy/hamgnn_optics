@@ -1,0 +1,14 @@
+# Template for: python hamgnn_optics/graph_data_gen.py --config hamgnn_optics/graph_data_gen.yaml
+# Use reader_output_file if HS.json has already been generated.
+structure_file: /path/to/structure.cif
+reader_output_file: /path/to/HS.json
+output_dir: /path/to/output/graph_data
+
+hamgnn:
+  nao_max: 26
+  orbital_indices: {}
+
+# To run read_openmx from this script, remove reader_output_file above and use:
+# openmx:
+#   reader: /path/to/read_openmx
+#   scfout_file: /path/to/overlap.scfout

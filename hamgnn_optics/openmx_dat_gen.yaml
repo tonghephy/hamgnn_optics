@@ -1,0 +1,6 @@
+# Template for: python hamgnn_optics/openmx_dat_gen.py --config hamgnn_optics/openmx_dat_gen.yaml
+# Replace all /path/to/... entries with paths on your system.
+structure_file: /path/to/structure.cif
+data_path: /path/to/DFT_DATA19
+output_dir: /path/to/output/openmx_input
+energy_cutoff_ry: 200.0
